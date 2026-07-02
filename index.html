@@ -1,62 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ADS no IF - Início</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/estilo.css">
-</head>
-<body data-pagina="inicio">
-  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="index.html">ADS IF Verde</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="menuPrincipal">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" data-link-pagina="inicio" href="index.html">Início</a></li>
-          <li class="nav-item"><a class="nav-link" data-link-pagina="disciplina" href="disciplina.html">Sobre a Disciplina</a></li>
-          <li class="nav-item"><a class="nav-link" data-link-pagina="conteudos" href="conteudos.html">Conteúdos</a></li>
-          <li class="nav-item"><a class="nav-link" data-link-pagina="aplicacoes" href="aplicacoes.html">Aplicações</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <main class="container py-5">
-    <section class="hero rounded-4 p-4 p-md-5 sombra-suave">
-      <div class="row align-items-center g-4">
-        <div class="col-lg-7">
-          <span class="badge badge-verde rounded-pill px-3 py-2 mb-3">Curso de Análise e Desenvolvimento de Sistemas</span>
-          <h1 class="display-5 fw-bold titulo-principal">Tecnologia, prática e inovação no Instituto Federal</h1>
-          <p class="lead subtitulo-principal">Este site apresenta a disciplina favorita escolhida para representar o curso de ADS, explicando sua importância, conteúdos estudados e aplicações no mundo real.</p>
-          <button class="btn btn-primario fw-bold" data-botao-curiosidade>Mostrar curiosidade</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADS no IF - Início</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body data-pagina="inicio">
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html"
+          >ADS IF - Catanduva-SP</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuPrincipal"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" data-link-pagina="inicio" href="index.html"
+                >Início</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-link-pagina="disciplina"
+                href="disciplina.html"
+                >Sobre a Disciplina</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-link-pagina="conteudos"
+                href="conteudos.html"
+                >Conteúdos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                data-link-pagina="aplicacoes"
+                href="aplicacoes.html"
+                >Aplicações</a
+              >
+            </li>
+          </ul>
         </div>
-        <div class="col-lg-5">
-          <div class="card bordas-verdes sombra-suave">
-            <div class="card-body">
-              <div class="icone-circulo mb-3">IF</div>
-              <h2 class="h4 card-title">Disciplina em destaque</h2>
-              <p class="card-text">Desenvolvimento Web é uma disciplina essencial para criar sistemas, sites responsivos e soluções modernas para diferentes necessidades.</p>
-              <div class="alert alert-success alerta-customizado mb-0 d-none" data-caixa-curiosidade>
-                Ela une lógica de programação, design responsivo e experiência do usuário em um único projeto.
+      </div>
+    </nav>
+
+    <main class="container py-5">
+      <section class="hero rounded-4 p-4 p-md-5 sombra-suave">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7">
+            <span class="badge badge-verde rounded-pill px-3 py-2 mb-3"
+              >Curso de Análise e Desenvolvimento de Sistemas</span
+            >
+            <h1 class="display-5 fw-bold titulo-principal">
+              Matéria WEB1 no curso de Análise e Desenvolvimento de Sistema no
+              IF
+            </h1>
+            <p class="lead subtitulo-principal">
+              Nessa disciplina aprendemos a desenvolver sites
+            </p>
+            <button class="btn btn-primario fw-bold" data-botao-curiosidade>
+              Mostrar curiosidade
+            </button>
+          </div>
+          <div class="col-lg-5">
+            <div
+              class="card bordas-verdes sombra-suave overflow-hidden p-0 position-relative"
+            >
+              <div class="card-img-wrapper" data-card-conteudo>
+                <img
+                  src="assets/imagem_card1.jpg"
+                  alt="Desenvolvimento Web"
+                  class="card-img-main"
+                />
+                <div class="card-img-hover-text">
+                  <p class="mb-0">
+                    A disciplina aborda HTML, CSS, JavaScript, Bootstrap e boas
+                    práticas, capacitando o aluno a desenvolver aplicações web
+                    completas e responsivas.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="d-none"
+                data-caixa-curiosidade
+                style="
+                  min-height: 250px;
+                  background-color: var(--fundo-secundario);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  padding: 1.5rem;
+                "
+              >
+                <p class="mb-0 text-center">
+                  Ela une lógica de programação, design responsivo e experiência
+                  do usuário em um único projeto.
+                </p>
               </div>
             </div>
           </div>
         </div>
+      </section>
+    </main>
+
+    <footer class="rodape text-center py-4">
+      <div class="container">
+        <p class="mb-0">
+          Projeto acadêmico ADS IF - <span data-ano-atual></span>
+        </p>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <footer class="rodape text-center py-4">
-    <div class="container">
-      <p class="mb-0">Projeto acadêmico ADS IF - <span data-ano-atual></span></p>
-    </div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

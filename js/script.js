@@ -16,11 +16,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const botaoCuriosidade = document.querySelector("[data-botao-curiosidade]");
   const caixaCuriosidade = document.querySelector("[data-caixa-curiosidade]");
+  const cardConteudo = document.querySelector("[data-card-conteudo]");
 
-  if (botaoCuriosidade && caixaCuriosidade) {
+  if (botaoCuriosidade && caixaCuriosidade && cardConteudo) {
     botaoCuriosidade.addEventListener("click", () => {
       const estaOculto = caixaCuriosidade.classList.contains("d-none");
       caixaCuriosidade.classList.toggle("d-none");
+      cardConteudo.classList.toggle("d-none");
       botaoCuriosidade.textContent = estaOculto
         ? "Ocultar curiosidade"
         : "Mostrar curiosidade";
