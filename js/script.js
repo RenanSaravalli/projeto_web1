@@ -47,8 +47,15 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
+      const assunto = encodeURIComponent(`Mensagem de ${nome} - ADS IF`);
+      const corpo = encodeURIComponent(
+        `Nome: ${nome}\nE-mail: ${email}\n\n${mensagem}`
+      );
+
+      window.open(`mailto:renansaravalli@gmail.com?subject=${assunto}&body=${corpo}`);
+
       alertaFormulario.className = "alert alert-success alerta-customizado";
-      alertaFormulario.textContent = `Obrigado, ${nome}! Sua mensagem sobre o curso foi enviada com sucesso.`;
+      alertaFormulario.textContent = `Obrigado, ${nome}! Seu cliente de e-mail foi aberto para enviar a mensagem.`;
       alertaFormulario.style.display = "block";
       formularioContato.reset();
     });
